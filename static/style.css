@@ -1,0 +1,247 @@
+
+html, body {
+	background: #333;
+	font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
+div#main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	min-height: 100%;
+}
+
+div#header {
+	display: flex;
+	flex-flow: row nowrap;
+	background: red;
+	height: 72px;
+	flex: 0 auto;
+	justify-content: center;
+	padding: 10px;
+}
+
+div#footer {
+	background: black;
+	flex: 0 auto;
+	justify-content: center;
+	display: flex;
+	height: 100px;
+	color: white;
+}
+
+div#footer a {
+	color: white;
+	text-decoration: none
+}
+
+div.content {
+	flex: 1 auto;
+	min-height: 100%;
+	height: 100%;
+	align-items: center;
+	min-height:100%;
+	justify-content: center;
+	display: flex;
+	margin-top: 2px;
+}
+h1 {
+	color: white
+}
+.ct {
+	flex: 1 auto;
+	max-width: 1000px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.r {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.h {
+	color: white;	
+	margin: 30px;
+}
+
+#ilogo {
+	height: 64px;
+}
+
+#logo {
+	height: 100%
+}
+
+table {
+	width: 100%;
+	color: white;
+	border-collapse: collapse;
+}
+
+table td {
+	height: 64px;
+	border: 1px solid white;
+	padding: 10px;
+}
+
+table td.input {
+	text-align: center
+}
+
+table td.img {
+	text-align: center
+}
+
+input {
+	height: 42px;
+	font-size: 1.2rem;
+	width: 64px;
+}
+
+table td.title {
+	
+}
+
+table td img {
+	height: 128px;
+}
+
+#menu a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+
+}
+
+div#result {
+        font-size: 1em;
+	height: 64px;
+	color: white;
+	margin-top: 10px;
+	flex: 1;
+	margin-bottom: 40px;
+}
+
+div#result table td {
+	height: auto;
+}
+
+p.result {
+        font-size: 1.2em;
+        color: #555;
+        text-align: left;
+}
+
+div#progressbar {
+        width: 100%;
+        background: #eee;
+}
+
+div#progress {
+        width: 0%;
+        background: #aabb11;
+
+}
+
+#ddfiles {
+        top: -1000px;
+        position: fixed;
+}
+
+
+span.error {
+        margin: 8px;
+        color: red;
+        font-weight: bold
+}
+
+
+button {
+	background: red;
+	font-size: 1.2rem;
+	color: white;
+	height: 52px;
+	cursor: pointer;
+	padding: 12px;
+	border: none;
+	margin-bottom: 32px;
+	outline: none
+}
+
+button:hover {
+	opacity: 0.9
+}
+
+div#droparea {
+        width: 440px;
+        height: 120px;
+        background: rgba(0,0,0,0.05);
+        border-radius: 10px;
+        border: 2px dashed rgba(0,0,0,0.2);
+        padding: 60px 0 0 0;
+        line-height: 26pt;
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: bold;
+        margin: 80px auto;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        cursor: pointer
+}
+
+
+
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.8); 
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; 
+	max-width: 600px;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
